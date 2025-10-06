@@ -1,0 +1,1158 @@
+
+<!-- saved from url=(0063)file:///Users/chelita/Downloads/advanced-case-support-2021.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>// Impact Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">5. Impact &amp; Evidence</h2>';
+            html += addField('Key Performance Indicators', 'kpis');
+            html += addField('Recent Outcomes', 'outcomes');
+            html += addField('Success Story', 'successStory');
+            html += addField('Evaluation Methods', 'evaluation');
+            html += addField('External Validation', 'validation');
+            html += addField('Long-Term Impact', 'longTermImpact');
+            
+            // Equity Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">6. Equity &amp; Community-Centered Approach</h2>';
+            html += addField('Equity Statement', 'equityStatement');
+            html += addField('Community Voice &amp; Co-Design', 'communityVoice');
+            html += addField('Board &amp; Staff Diversity', 'diversity');
+            html
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case for Support Development Workbook 2021</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #f8f9fa;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        
+        .header-banner {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header-banner h1 {
+            font-size: 42px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .header-banner .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .intro-section {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        .intro-section h2 {
+            color: #2c3e50;
+            font-size: 26px;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        
+        .intro-section p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tab {
+            padding: 12px 24px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+        }
+        
+        .tab:hover {
+            border-color: #3498db;
+            background: #f0f8ff;
+        }
+        
+        .tab.active {
+            background: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .section-card {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        .section-number {
+            width: 50px;
+            height: 50px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            color: #2c3e50;
+            font-weight: 400;
+        }
+        
+        .field-group {
+            margin-bottom: 25px;
+        }
+        
+        .field-label {
+            display: block;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+        }
+        
+        .field-help {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        textarea.large {
+            min-height: 180px;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .three-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .strategic-questions {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .strategic-questions h4 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        
+        .strategic-questions ul {
+            padding-left: 20px;
+            color: #555;
+        }
+        
+        .strategic-questions li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-item input {
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .info-box strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .button-toolbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 2px solid #e0e0e0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        
+        button {
+            padding: 12px 30px;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+        }
+        
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+        
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #229954;
+        }
+        
+        .progress-indicator {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            transition: width 0.3s;
+        }
+        
+        .progress-text {
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        @media print {
+            .tabs, .button-toolbar, .progress-indicator {
+                display: none;
+            }
+            
+            .tab-content {
+                display: block !important;
+            }
+            
+            .section-card {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .two-column, .three-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+    <div class="header-banner">
+        <h1>Case for Support Development Workbook</h1>
+        <p class="subtitle">A comprehensive guide to building your philanthropic case | 2025 Edition</p>
+    </div>
+    
+    <div class="button-toolbar">
+        <button class="btn-secondary" onclick="clearForm()">Clear All</button>
+        <button class="btn-success" onclick="saveProgress()">Save Progress</button>
+        <button class="btn-primary" onclick="downloadPDF()">Download PDF</button>
+        <button class="btn-primary" onclick="exportWord()">Export to Word</button>
+    </div>
+    
+    <script>
+        var currentTab = 'foundation';
+        var allTabs = ['foundation', 'context', 'need', 'solution', 'impact', 'equity', 'resources', 'narrative'];
+        
+        function showTab(tabName) {
+            // Hide all tabs
+            var contents = document.querySelectorAll('.tab-content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+            
+            // Remove active from all tab buttons
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+            currentTab = tabName;
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+            
+            updateProgress();
+        }
+        
+        function updateProgress() {
+            var allInputs = document.querySelectorAll('input[type="text"], input[type="number"], textarea');
+            var filled = 0;
+            var total = allInputs.length;
+            
+            allInputs.forEach(function(input) {
+                if (input.value.trim() !== '') {
+                    filled++;
+                }
+            });
+            
+            var percentage = Math.round((filled / total) * 100);
+            document.getElementById('progressBar').style.width = percentage + '%';
+            document.getElementById('progressText').textContent = percentage + '% Complete';
+        }
+        
+        function saveProgress() {
+            var inputs = document.querySelectorAll('input, textarea, select');
+            var savedData = {};
+            
+            inputs.forEach(function(input) {
+                if (input.type === 'checkbox') {
+                    savedData[input.id] = input.checked;
+                } else {
+                    savedData[input.id] = input.value;
+                }
+            });
+            
+            localStorage.setItem('caseForSupport2021', JSON.stringify(savedData));
+            alert('Progress saved successfully!');
+        }
+        
+        function loadProgress() {
+            var saved = localStorage.getItem('caseForSupport2021');
+            if (saved) {
+                var data = JSON.parse(saved);
+                
+                Object.keys(data).forEach(function(key) {
+                    var element = document.getElementById(key);
+                    if (element) {
+                        if (element.type === 'checkbox') {
+                            element.checked = data[key];
+                        } else {
+                            element.value = data[key];
+                        }
+                    }
+                });
+                
+                updateProgress();
+            }
+        }
+        
+        function clearForm() {
+            if (confirm('Are you sure you want to clear all fields? This cannot be undone.')) {
+                document.querySelectorAll('input, textarea').forEach(function(field) {
+                    if (field.type === 'checkbox') {
+                        field.checked = false;
+                    } else {
+                        field.value = '';
+                    }
+                });
+                localStorage.removeItem('caseForSupport2021');
+                updateProgress();
+                alert('Form cleared successfully!');
+            }
+        }
+        
+        function downloadPDF() {
+            window.print();
+        }
+        
+        function exportWord() {
+            var content = generateWordContent();
+            var blob = new Blob([content], {
+                type: 'application/msword'
+            });
+            var url = URL.createObjectURL(blob);
+            var link = document.createElement('a');
+            link.href = url;
+            link.download = 'Case-for-Support-' + new Date().toISOString().split('T')[0] + '.doc';
+            link.click();
+        }
+        
+        function generateWordContent() {
+            var html = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">';
+            html += '<head><meta charset="utf-8"><title>Case for Support</title></head><body>';
+            
+            html += '<h1 style="text-align:center; color:#2c3e50;">Case for Support</h1>';
+            html += '<p style="text-align:center; font-style:italic; color:#7f8c8d;">Generated on ' + new Date().toLocaleDateString() + '</p>';
+            html += '<hr>';
+            
+            // Foundation Section
+            html += '<h2 style="color:#3498db;">1. Organizational Foundation</h2>';
+            html += addField('Organization Name', 'orgLegalName');
+            html += addField('Operating Name', 'orgOperatingName');
+            html += addField('Year Founded', 'yearFounded');
+            html += addField('Mission Statement', 'mission');
+            html += addField('Vision Statement', 'vision');
+            html += addField('Core Values', 'values');
+            html += addField('Annual Budget', 'budget');
+            html += addField('Staff Size', 'staffSize');
+            html += addField('Service Area', 'serviceArea');
+            
+            // Context Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">2. Context & Landscape</h2>';
+            html += addField('Sector Overview', 'sectorOverview');
+            html += addField('Key Trends 2024-2025', 'trends');
+            html += addField('Post-Pandemic Reality', 'postPandemic');
+            html += addField('Landscape Analysis', 'landscape');
+            html += addField('Competitive Positioning', 'positioning');
+            
+            // Need Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">3. The Need</h2>';
+            html += addField('Problem Statement', 'problemStatement');
+            html += addField('Root Causes & Systemic Barriers', 'rootCauses');
+            html += addField('Intersectionality & Disparate Impact', 'disparateImpact');
+            html += addField('Primary Population', 'population');
+            html += addField('Number Affected', 'numberAffected');
+            html += addField('Data & Evidence', 'needEvidence');
+            html += addField('Consequences of Inaction', 'consequences');
+            html += addField('Urgency Factors', 'urgency');
+            
+            // Solution Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">4. Our Solution</h2>';
+            html += addField('Strategic Approach', 'approach');
+            html += addField('Core Programs', 'programs');
+            html += addField('Unique Value Proposition', 'uniqueValue');
+            html += addField('Partnerships', 'partnerships');
+            
+            // Impact Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">5. Impact & Evidence</h2>';
+            html += addField('Key Performance Indicators', 'kpis');
+            html += addField('Recent Outcomes', 'outcomes');
+            html += addField('Success Story', 'successStory');
+            html += addField('Evaluation Methods', 'evaluation');
+            html += addField('External Validation', 'validation');
+            html += addField('Long-Term Impact', 'longTermImpact');
+            
+            // Resources Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">6. Resource Requirements</h2>';
+            html += addField('Current Funding Sources', 'fundingSources');
+            html += addField('Funding Need', 'fundingNeed');
+            html += addField('Use of Funds', 'useOfFunds');
+            html += addField('Investment Impact', 'investmentImpact');
+            html += addField('Cost Per Outcome', 'costPerOutcome');
+            html += addField('ROI', 'roi');
+            html += addField('Sustainability Plan', 'sustainability');
+            html += addField('Donor Stewardship', 'stewardship');
+            
+            // Narrative Section
+            html += '<h2 style="color:#3498db; margin-top:30px;">7. Compelling Narrative</h2>';
+            html += addField('Executive Summary', 'execSummary');
+            html += addField('Full Narrative', 'fullNarrative');
+            html += addField('Call to Action', 'callToAction');
+            html += addField('Elevator Pitch', 'elevatorPitch');
+            
+            html += '</body></html>';
+            return html;
+        }
+        
+        function addField(label, fieldId) {
+            var element = document.getElementById(fieldId);
+            if (!element || !element.value.trim()) {
+                return '';
+            }
+            
+            var value = element.value.replace(/\n/g, '<br>');
+            return '<p><strong>' + label + ':</strong><br>' + value + '</p>';
+        }
+        
+        // Auto-save functionality
+        var inputs = document.querySelectorAll('input, textarea, select');
+        inputs.forEach(function(input) {
+            input.addEventListener('input', function() {
+                updateProgress();
+            });
+            
+            input.addEventListener('blur', function() {
+                var inputs = document.querySelectorAll('input, textarea, select');
+                var savedData = {};
+                
+                inputs.forEach(function(inp) {
+                    if (inp.type === 'checkbox') {
+                        savedData[inp.id] = inp.checked;
+                    } else {
+                        savedData[inp.id] = inp.value;
+                    }
+                });
+                
+                localStorage.setItem('caseForSupport2021', JSON.stringify(savedData));
+            });
+        });
+        
+        // Load saved data on page load
+        window.addEventListener('load', function() {
+            loadProgress();
+        });
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Ctrl/Cmd + S to save
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                saveProgress();
+            }
+        });
+    </script>
+
+
+    
+    <div class="container">
+        <div class="intro-section">
+            <h2>About This Workbook</h2>
+            <p>A compelling Case for Support is the foundation of successful fundraising in 2025. This workbook guides you through a strategic, equity-centered process to articulate your organization's value proposition, demonstrate measurable impact, and inspire philanthropic investment from diverse donor audiences.</p>
+            <p><strong>2025 Focus Areas:</strong> This edition emphasizes trust-based philanthropy, community-centric approaches, diversity/equity/inclusion integration, data storytelling, digital engagement strategies, and multi-generational donor communication.</p>
+            <p><strong>Instructions:</strong> Complete each section thoughtfully. Your responses will auto-save. Use the navigation tabs to move between sections, and download your completed case when finished.</p>
+        </div>
+        
+        <div class="progress-indicator">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="progressText">0% Complete</div>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="showTab(&#39;foundation&#39;)">Foundation</div>
+            <div class="tab" onclick="showTab(&#39;context&#39;)">Context &amp; Landscape</div>
+            <div class="tab" onclick="showTab(&#39;need&#39;)">The Need</div>
+            <div class="tab" onclick="showTab(&#39;solution&#39;)">Our Solution</div>
+            <div class="tab" onclick="showTab(&#39;impact&#39;)">Impact &amp; Evidence</div>
+            <div class="tab" onclick="showTab(&#39;equity&#39;)">Equity &amp; Community</div>
+            <div class="tab" onclick="showTab(&#39;resources&#39;)">Investment Case</div>
+            <div class="tab" onclick="showTab(&#39;narrative&#39;)">Narrative &amp; Storytelling</div>
+        </div>
+        
+        <!-- FOUNDATION TAB -->
+        <div id="foundation" class="tab-content active">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">1</div>
+                    <div class="section-title">Organizational Foundation</div>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Organization Legal Name</label>
+                    <input type="text" id="orgLegalName" placeholder="Full legal name">
+                </div>
+                
+                <div class="two-column">
+                    <div class="field-group">
+                        <label class="field-label">Operating Name (if different)</label>
+                        <input type="text" id="orgOperatingName" placeholder="DBA or common name">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Year Founded</label>
+                        <input type="number" id="yearFounded" placeholder="YYYY">
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Mission Statement</label>
+                    <p class="field-help">Your organization's core purpose (typically 1-2 sentences)</p>
+                    <textarea id="mission" placeholder="Our mission is to..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Vision Statement</label>
+                    <p class="field-help">The future state you aspire to create</p>
+                    <textarea id="vision" placeholder="We envision a world where..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Core Values</label>
+                    <p class="field-help">List 3-5 values that guide your work</p>
+                    <textarea id="values" placeholder="Integrity, Innovation, Equity..."></textarea>
+                </div>
+                
+                <div class="three-column">
+                    <div class="field-group">
+                        <label class="field-label">Annual Operating Budget</label>
+                        <input type="text" id="budget" placeholder="$XXX,XXX">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Staff Size</label>
+                        <input type="number" id="staffSize" placeholder="Number">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Geographic Service Area</label>
+                        <input type="text" id="serviceArea" placeholder="City, Region, etc.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ENVIRONMENTAL CONTEXT TAB -->
+        <div id="context" class="tab-content">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">2</div>
+                    <div class="section-title">Context, Landscape &amp; Current Climate</div>
+                </div>
+                
+                <div class="info-box">
+                    <strong>2025 Context:</strong>
+                    Donors want to understand the broader ecosystem in which you operate, including how recent events (economic conditions, social movements, policy changes, climate impacts, technological shifts) influence your work and community needs.
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Sector/Field Overview</label>
+                    <p class="field-help">Describe the broader field or sector in which you work</p>
+                    <textarea id="sectorOverview" class="large" placeholder="Our organization operates within the [sector], which currently faces..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Key Trends &amp; Emerging Issues (2024-2025)</label>
+                    <p class="field-help">What demographic, social, economic, policy, climate, or technological trends are shaping your work?</p>
+                    <textarea id="trends" class="large" placeholder="Critical trends include: economic uncertainty, demographic shifts, climate impacts, AI/technology, policy changes..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Post-Pandemic &amp; Current Reality</label>
+                    <p class="field-help">How has your work evolved since 2020? What permanent changes have you made?</p>
+                    <textarea id="postPandemic" class="large" placeholder="Since the pandemic, we have seen/adapted..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Landscape Analysis &amp; Ecosystem Mapping</label>
+                    <p class="field-help">Who else is working in this space? How do you collaborate, complement, or differentiate?</p>
+                    <textarea id="landscape" class="large" placeholder="We work within an ecosystem that includes [organizations]. Our role is unique because..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Competitive Positioning</label>
+                    <p class="field-help">What is your distinctive niche or market position?</p>
+                    <textarea id="positioning" placeholder="Unlike others in our field, we uniquely..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- THE NEED TAB -->
+        <div id="need" class="tab-content">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">3</div>
+                    <div class="section-title">The Need: Problem Definition</div>
+                </div>
+                
+                <div class="strategic-questions">
+                    <h4>Strategic Framing Questions (2025 Lens):</h4>
+                    <ul>
+                        <li>What is the specific problem or unmet need your organization addresses?</li>
+                        <li>What are the root causes and systemic barriers, not just symptoms?</li>
+                        <li>Who is most impacted? How are different communities affected differently?</li>
+                        <li>What happens if this need goes unaddressed? What is the cost of inaction?</li>
+                        <li>Why now? What creates urgency in the current environment?</li>
+                        <li>How does this intersect with issues of equity, justice, and access?</li>
+                    </ul>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Problem Statement</label>
+                    <p class="field-help">Clearly articulate the core problem (avoid jargon, use compelling language)</p>
+                    <textarea id="problemStatement" class="large" placeholder="In [community/population], [X number/percentage] face..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Root Causes &amp; Systemic Barriers</label>
+                    <p class="field-help">What systemic, structural, or underlying factors contribute to this problem? Consider historical context and inequities.</p>
+                    <textarea id="rootCauses" placeholder="This problem stems from historical/systemic factors including..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Intersectionality &amp; Disparate Impact</label>
+                    <p class="field-help">How does this issue affect different communities? Are there disparities by race, income, geography, gender, age, ability, or other factors?</p>
+                    <textarea id="disparateImpact" placeholder="This issue disproportionately affects..."></textarea>
+                </div>
+                
+                <div class="two-column">
+                    <div class="field-group">
+                        <label class="field-label">Primary Population Served</label>
+                        <input type="text" id="population" placeholder="Children, veterans, families, etc.">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Number Affected Annually</label>
+                        <input type="text" id="numberAffected" placeholder="e.g., 15,000 individuals">
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Data &amp; Evidence</label>
+                    <p class="field-help">Include statistics, research findings, or credible sources that document the need</p>
+                    <textarea id="needEvidence" class="large" placeholder="According to [source], research shows that..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Consequences of Inaction</label>
+                    <p class="field-help">What happens if this need remains unaddressed?</p>
+                    <textarea id="consequences" placeholder="Without intervention, we will see..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Why Now? Urgency Factors</label>
+                    <textarea id="urgency" placeholder="This issue demands immediate attention because..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- OUR SOLUTION TAB -->
+        <div id="solution" class="tab-content">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">4</div>
+                    <div class="section-title">Our Solution: Theory of Change</div>
+                </div>
+                
+                <div class="info-box">
+                    <strong>Theory of Change:</strong>
+                    Explain the logical connection between your activities, outputs, outcomes, and long-term impact. How does your work create meaningful change?
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Strategic Approach</label>
+                    <p class="field-help">Describe your overall strategy for addressing the need</p>
+                    <textarea id="approach" class="large" placeholder="Our approach is rooted in..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Core Programs &amp; Services</label>
+                    <p class="field-help">List and briefly describe your key programs</p>
+                    <textarea id="programs" class="large" placeholder="1. [Program Name]: [Description]\n2. [Program Name]: [Description]"></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Unique Value Proposition</label>
+                    <p class="field-help">What makes your organization uniquely positioned to solve this problem?</p>
+                    <textarea id="uniqueValue" class="large" placeholder="We are uniquely qualified because..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Competitive Advantages</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="adv1">
+                            <label for="adv1">Proven methodology or evidence-based practices</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="adv2">
+                            <label for="adv2">Deep community relationships and trust</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="adv3">
+                            <label for="adv3">Specialized expertise or credentials</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="adv4">
+                            <label for="adv4">Strategic partnerships and collaborations</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="adv5">
+                            <label for="adv5">Track record and organizational longevity</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="adv6">
+                            <label for="adv6">Innovative or pioneering approach</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Key Partnerships &amp; Collaborations</label>
+                    <textarea id="partnerships" placeholder="We work closely with [organizations], which allows us to..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- IMPACT TAB -->
+        <div id="impact" class="tab-content">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">5</div>
+                    <div class="section-title">Impact &amp; Evidence of Effectiveness</div>
+                </div>
+                
+                <div class="strategic-questions">
+                    <h4>Demonstrating Impact:</h4>
+                    <ul>
+                        <li>What measurable outcomes have you achieved?</li>
+                        <li>How do you evaluate and track success?</li>
+                        <li>What stories illustrate your impact?</li>
+                        <li>What independent validation or recognition have you received?</li>
+                    </ul>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Key Performance Indicators (KPIs)</label>
+                    <p class="field-help">List your most important metrics for measuring success</p>
+                    <textarea id="kpis" placeholder="1. Number of individuals served\n2. Percentage showing improvement\n3. Cost per outcome..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Recent Outcomes &amp; Achievements</label>
+                    <p class="field-help">Quantifiable results from the past 1-3 years</p>
+                    <textarea id="outcomes" class="large" placeholder="In [year], we:\n- Served X individuals\n- Achieved Y% success rate\n- Generated $Z in community benefit"></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Success Story / Case Study</label>
+                    <p class="field-help">Share a compelling narrative that illustrates your impact (use pseudonyms if needed)</p>
+                    <textarea id="successStory" class="large" placeholder="[Name]&#39;s story exemplifies the transformative power of our work..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Evaluation Methods</label>
+                    <p class="field-help">How do you measure and track outcomes?</p>
+                    <textarea id="evaluation" placeholder="We employ rigorous evaluation including..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">External Validation &amp; Recognition</label>
+                    <p class="field-help">Awards, accreditations, research citations, media coverage, etc.</p>
+                    <textarea id="validation" placeholder="Our work has been recognized through..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Long-Term Impact Vision</label>
+                    <p class="field-help">What systemic or lasting change do you aim to create?</p>
+                    <textarea id="longTermImpact" placeholder="Over the next 5-10 years, our work will contribute to..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- NEW EQUITY TAB -->
+        <div id="equity" class="tab-content">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">6</div>
+                    <div class="section-title">Equity, Justice &amp; Community-Centered Approach</div>
+                </div>
+                
+                <div class="info-box">
+                    <strong>Why This Matters in 2025:</strong>
+                    Trust-based philanthropy and community-centric practices are now expected. Donors want to understand your commitment to equity, how you center those you serve, and how you're addressing systemic barriers.
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Equity Statement &amp; Commitment</label>
+                    <p class="field-help">How does your organization define and practice equity, diversity, and inclusion?</p>
+                    <textarea id="equityStatement" class="large" placeholder="We are committed to advancing equity by..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Community Voice &amp; Co-Design</label>
+                    <p class="field-help">How do you center the voices and leadership of those you serve? How are they involved in decision-making?</p>
+                    <textarea id="communityVoice" class="large" placeholder="Our community members are involved through..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Board &amp; Staff Diversity</label>
+                    <p class="field-help">Describe the diversity of your leadership, board, and staff (consider sharing percentages if appropriate)</p>
+                    <textarea id="diversity" placeholder="Our board/staff reflects the community we serve with..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Accessibility &amp; Barrier Reduction</label>
+                    <p class="field-help">How do you ensure your programs and services are accessible to all?</p>
+                    <textarea id="accessibility" placeholder="We remove barriers by offering..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Cultural Humility &amp; Responsiveness</label>
+                    <p class="field-help">How do you adapt your approach to be culturally responsive and community-appropriate?</p>
+                    <textarea id="culturalHumility" placeholder="We practice cultural humility through..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Power-Sharing &amp; Trust-Based Practices</label>
+                    <p class="field-help">How do you share power with community members? What trust-based practices do you employ?</p>
+                    <textarea id="trustBased" placeholder="We shift power dynamics by..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Anti-Racism &amp; Social Justice Work</label>
+                    <p class="field-help">If applicable, describe your organization's commitment to anti-racism and social justice</p>
+                    <textarea id="antiRacism" placeholder="We actively work toward racial equity through..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- RESOURCES TAB - Now #7 -->
+        <div id="resources" class="tab-content">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">7</div>
+                    <div class="section-title">Investment Case &amp; Resource Strategy</div>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Current Funding Portfolio</label>
+                    <p class="field-help">Provide a breakdown of your revenue streams and funding diversification</p>
+                    <textarea id="fundingSources" placeholder="Individual donors: X%\nFoundations: Y%\nCorporate: Z%\nGovernment: A%\nEarned revenue/Social enterprise: B%\nMonthly/recurring donors: C%"></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Digital Fundraising &amp; Engagement Strategy</label>
+                    <p class="field-help">How do you engage donors digitally? (social media, email, crowdfunding, virtual events, etc.)</p>
+                    <textarea id="digitalStrategy" placeholder="Our digital engagement includes..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Specific Funding Need / Campaign Goal</label>
+                    <p class="field-help">Be specific about what you're asking for and the timeframe</p>
+                    <input type="text" id="fundingNeed" placeholder="$XXX,XXX over X years for... OR We are seeking unrestricted support to...">
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Unrestricted vs. Restricted Funding Needs</label>
+                    <p class="field-help">In 2025, many donors prefer unrestricted giving. Articulate why flexible funding matters.</p>
+                    <textarea id="fundingFlexibility" placeholder="We seek unrestricted support to... / Specific project funding will..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Use of Funds</label>
+                    <p class="field-help">Provide a detailed breakdown of how funds will be allocated</p>
+                    <textarea id="useOfFunds" class="large" placeholder="Program delivery: $XXX\nStaff expansion: $XXX\nInfrastructure: $XXX\nEvaluation: $XXX"></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Investment Impact</label>
+                    <p class="field-help">What will donor investment make possible? Be specific and compelling</p>
+                    <textarea id="investmentImpact" class="large" placeholder="Your investment of $XXX will enable us to..."></textarea>
+                </div>
+                
+                <div class="two-column">
+                    <div class="field-group">
+                        <label class="field-label">Cost Per Outcome/Impact</label>
+                        <input type="text" id="costPerOutcome" placeholder="e.g., $500 per person achieving outcome">
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label">Social Return on Investment (SROI)</label>
+                        <input type="text" id="roi" placeholder="e.g., $4 in community value per $1 invested">
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Multi-Year vs. One-Time Support</label>
+                    <p class="field-help">Make the case for sustained, multi-year commitments if applicable</p>
+                    <textarea id="multiYear" placeholder="Multi-year support allows us to..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Sustainability Plan</label>
+                    <p class="field-help">How will you sustain this work beyond the initial investment?</p>
+                    <textarea id="sustainability" placeholder="We will ensure sustainability through..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Donor Recognition &amp; Engagement Strategy</label>
+                    <p class="field-help">How will you engage and steward donors? Consider multi-generational preferences (Boomers, Gen X, Millennials, Gen Z)</p>
+                    <textarea id="stewardship" placeholder="We will engage donors through personalized impact reports, virtual site visits, community events, digital updates..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Transparency &amp; Reporting Commitments</label>
+                    <p class="field-help">What reporting and transparency will you provide to donors?</p>
+                    <textarea id="transparency" placeholder="Donors will receive quarterly updates, annual impact reports, financial transparency..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- NARRATIVE TAB - Now #8 -->
+        <div id="narrative" class="tab-content">
+            <div class="section-card">
+                <div class="section-header">
+                    <div class="section-number">8</div>
+                    <div class="section-title">Narrative &amp; Storytelling Strategy</div>
+                </div>
+                
+                <div class="info-box">
+                    <strong>2025 Storytelling Approach:</strong>
+                    Modern donors respond to authentic, human-centered stories that demonstrate impact. Your narrative should be compelling across multiple formats: written proposals, video scripts, social media, and in-person presentations. Consider how different audiences (major donors, foundations, individual supporters, younger donors) engage with stories.
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Core Brand Narrative</label>
+                    <p class="field-help">Your authentic organizational story - who you are, why you exist, what makes you different</p>
+                    <textarea id="brandNarrative" class="large" placeholder="We are [organization], and we exist because..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Executive Summary (200-300 words)</label>
+                    <p class="field-help">A compelling overview that captures the essence of your case</p>
+                    <textarea id="execSummary" class="large" placeholder="[Organization name] is seeking [amount] to [achieve what]. In [community], [problem]..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Full Narrative Case for Support (800-1200 words)</label>
+                    <p class="field-help">Your complete case, integrating all elements above into a compelling story</p>
+                    <textarea id="fullNarrative" style="min-height: 400px;" placeholder="Begin with a compelling opening that draws the reader in..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Call to Action</label>
+                    <p class="field-help">How do you want prospects to respond? Be clear and specific</p>
+                    <textarea id="callToAction" placeholder="We invite you to join us by..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Elevator Pitch (30 seconds / 75 words)</label>
+                    <p class="field-help">A concise version for brief encounters and social media</p>
+                    <textarea id="elevatorPitch" placeholder="Write a compelling 30-second summary..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Social Media Summary (280 characters)</label>
+                    <p class="field-help">Distill your case into a tweet/X post</p>
+                    <textarea id="socialMedia" rows="2" placeholder="Craft a compelling social media post..."></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Video Script Outline (60-90 seconds)</label>
+                    <p class="field-help">Key talking points for a short impact video</p>
+                    <textarea id="videoScript" placeholder="Opening: [Hook]\nProblem: [Brief need statement]\nSolution: [Your approach]\nImpact: [Results/story]\nCall to action: [Ask]"></textarea>
+                </div>
+                
+                <div class="field-group">
+                    <label class="field-label">Donor Personas &amp; Messaging</label>
+                    <p class="field-help">How would you adapt your message for different donor segments? (Major donors, monthly givers, Gen Z, foundations, corporate partners)</p>
+                    <textarea id="donorPersonas" class="large" placeholder="For major donors, we emphasize... For younger donors, we highlight... For foundations, we focus on..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div></body></html>
